@@ -7,7 +7,7 @@ implementa uma interface compromete-se a implementar os métodos descritos na
 interface.
 
 ### Situação exemplo
-Estamos a desenvolver uma API para reproduzir musica.
+Estamos a desenvolver uma API para reproduzir música.
 ```java
 public class Radio {
     private ArrayList<Musica> musicas;
@@ -31,7 +31,7 @@ programadores) a uma classe `Musica` definida por nós.
 ### Solução
 Podemos então definir uma interface, um contrato. E as condições deste
 contrato são muito simples:
- * *"Se implementares estes metodos, eu posso reproduzir a tua musica"*
+ * *"Se implementares estes métodos, eu posso reproduzir a tua música"*
 
 Definimos a interface então da seguinte forma:
 ```java
@@ -43,7 +43,7 @@ De notar que não coloquei um *access modifier* (`public`, `private`, etc.).
 Isto é porque todos os métodos definidos numa interface são obrigatoriamente
 `public`.
 
-Assim um programador que queria usar a nossa API pode definir a sua classe
+Assim um programador que queira usar a nossa API pode definir a sua classe
 de musica e utilizar o radio que nós já definimos.
 ```java
 public class MyMusic implements Musica{
@@ -59,7 +59,7 @@ public class MyMusic implements Musica{
 }
 ```
 
-E para utilizar a classe `Radio` podemos usar a nossa musica.
+E para utilizar a classe `Radio` podemos usar a nossa música.
 
 ```java
 public static void main(String[] args) {
